@@ -1,0 +1,23 @@
+{
+  "name": "support",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "workspaces": [
+    "libs/dom-render/dist",
+    "libs/simple-boot-core/dist",
+    "libs/simple-boot-front/dist",
+    "libs/simple-boot-http-server/dist",
+    "libs/simple-boot-http-ssr/dist",
+    "src"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

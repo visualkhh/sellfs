@@ -1,0 +1,20 @@
+[submodule "libs/dom-render"]
+	path = libs/dom-render
+	url = https://github.com/visualkhh/dom-render.git
+	branch = master
+[submodule "libs/simple-boot-core"]
+	path = libs/simple-boot-core
+	url = https://github.com/visualkhh/simple-boot-core.git
+	branch = master
+[submodule "libs/simple-boot-front"]
+	path = libs/simple-boot-front
+	url = https://github.com/visualkhh/simple-boot-front.git
+	branch = master
+[submodule "libs/simple-boot-http-ssr"]
+	path = libs/simple-boot-http-ssr
+	url = https://github.com/visualkhh/simple-boot-http-ssr.git
+	branch = master
+[submodule "libs/simple-boot-http-server"]
+	path = libs/simple-boot-http-server
+	url = https://github.com/visualkhh/simple-boot-http-server.git
+	branch = master
