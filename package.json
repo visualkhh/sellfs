@@ -4,6 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve:front:support": "npm run serve:front --workspace=support",
+    "serve:front:watch:support": "npm run serve:front:watch --workspace=support",
+    "serve:server:support": "npm run serve:server --workspace=support",
+    "serve:server:watch:support": "npm run serve:server:watch --workspace=support",
+    "bundle:dev:support": "npm run bundle:front:dev:support && npm run bundle:server:dev:support",
+    "bundle:prod:support": "npm run bundle:front:prod:support && npm run bundle:server:prod:support",
+    "bundle:front:watch:support": "npm run bundle:front:watch --workspace=support",
+    "bundle:front:dev:support": "npm run bundle:front:dev --workspace=support",
+    "bundle:front:prod:support": "npm run bundle:front:prod --workspace=support",
+    "bundle:server:watch:support": "npm run bundle:server:watch --workspace=support",
+    "bundle:server:dev:support": "npm run bundle:server:dev --workspace=support",
+    "bundle:server:prod:support": "npm run bundle:server:prod --workspace=support",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,7 +25,7 @@
     "libs/simple-boot-front/dist",
     "libs/simple-boot-http-server/dist",
     "libs/simple-boot-http-ssr/dist",
-    "src"
+    "support"
   ],
   "author": "",
   "license": "ISC",

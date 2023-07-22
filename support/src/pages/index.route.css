@@ -1,0 +1,1369 @@
+.font-weight-normal {
+    font-weight: normal
+}
+.min-h-screen-75 {
+    min-height: 75vh;
+}
+.h-70-px {
+    height: 70px;
+}
+.-mt-24 {
+    margin-top: -6rem;
+}
+
+.bg-blueGray-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(226, 232, 240, var(--tw-bg-opacity));
+}
+.bg-lightBlue-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(56, 189, 248, var(--tw-bg-opacity));
+}
+.bg-emerald-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+}
+.text-blueGray-500 {
+    --tw-text-opacity: 1;
+    color: rgba(100, 116, 139, var(--tw-text-opacity));
+}
+.font-semibold {
+    font-weight: 600;
+}
+.min-w-0 {
+    min-width: 0px;
+}
+
+
+.youtube-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/*tailwind*/
+
+.w-screen-1\/2 {
+    width: 50vw
+}
+
+.w-screen-1\/3 {
+    width: 33.333333vw
+}
+
+.w-screen-2\/3 {
+    width: 66.666667vw
+}
+
+.w-screen-1\/4 {
+    width: 25vw
+}
+
+.w-screen-2\/4 {
+    width: 50vw
+}
+
+.w-screen-3\/4 {
+    width: 75vw
+}
+
+.w-screen-1\/5 {
+    width: 20vw
+}
+
+.w-screen-2\/5 {
+    width: 40vw
+}
+
+.w-screen-3\/5 {
+    width: 60vw
+}
+
+.w-screen-4\/5 {
+    width: 80vw
+}
+
+.w-screen-1\/6 {
+    width: 16.666667vw
+}
+
+.w-screen-2\/6 {
+    width: 33.333333vw
+}
+
+.w-screen-3\/6 {
+    width: 50vw
+}
+
+.w-screen-4\/6 {
+    width: 66.666667vw
+}
+
+.w-screen-5\/6 {
+    width: 83.333333vw
+}
+
+.w-screen-1\/12 {
+    width: 8.333333vw
+}
+
+.w-screen-2\/12 {
+    width: 16.666667vw
+}
+
+.w-screen-3\/12 {
+    width: 25vw
+}
+
+.w-screen-4\/12 {
+    width: 33.333333vw
+}
+
+.w-screen-5\/12 {
+    width: 41.666667vw
+}
+
+.w-screen-6\/12 {
+    width: 50vw
+}
+
+.w-screen-7\/12 {
+    width: 58.333333vw
+}
+
+.w-screen-8\/12 {
+    width: 66.666667vw
+}
+
+.w-screen-9\/12 {
+    width: 75vw
+}
+
+.w-screen-10\/12 {
+    width: 83.333333vw
+}
+
+.w-screen-11\/12 {
+    width: 91.666667vw
+}
+
+.w-screen-h-1\/2 {
+    width: 50vh
+}
+
+.w-screen-h-1\/3 {
+    width: 33.333333vh
+}
+
+.w-screen-h-2\/3 {
+    width: 66.666667vh
+}
+
+.w-screen-h-1\/4 {
+    width: 25vh
+}
+
+.w-screen-h-2\/4 {
+    width: 50vh
+}
+
+.w-screen-h-3\/4 {
+    width: 75vh
+}
+
+.w-screen-h-1\/5 {
+    width: 20vh
+}
+
+.w-screen-h-2\/5 {
+    width: 40vh
+}
+
+.w-screen-h-3\/5 {
+    width: 60vh
+}
+
+.w-screen-h-4\/5 {
+    width: 80vh
+}
+
+.w-screen-h-1\/6 {
+    width: 16.666667vh
+}
+
+.w-screen-h-2\/6 {
+    width: 33.333333vh
+}
+
+.w-screen-h-3\/6 {
+    width: 50vh
+}
+
+.w-screen-h-4\/6 {
+    width: 66.666667vh
+}
+
+.w-screen-h-5\/6 {
+    width: 83.333333vh
+}
+
+.w-screen-h-1\/12 {
+    width: 8.333333vh
+}
+
+.w-screen-h-2\/12 {
+    width: 16.666667vh
+}
+
+.w-screen-h-3\/12 {
+    width: 25vh
+}
+
+.w-screen-h-4\/12 {
+    width: 33.333333vh
+}
+
+.w-screen-h-5\/12 {
+    width: 41.666667vh
+}
+
+.w-screen-h-6\/12 {
+    width: 50vh
+}
+
+.w-screen-h-7\/12 {
+    width: 58.333333vh
+}
+
+.w-screen-h-8\/12 {
+    width: 66.666667vh
+}
+
+.w-screen-h-9\/12 {
+    width: 75vh
+}
+
+.w-screen-h-10\/12 {
+    width: 83.333333vh
+}
+
+.w-screen-h-11\/12 {
+    width: 91.666667vh
+}
+
+
+
+
+.h-screen-1\/2 {
+    height: 50vh
+}
+
+.h-screen-1\/3 {
+    height: 33.333333vh
+}
+
+.h-screen-2\/3 {
+    height: 66.666667vh
+}
+
+.h-screen-1\/4 {
+    height: 25vh
+}
+
+.h-screen-2\/4 {
+    height: 50vh
+}
+
+.h-screen-3\/4 {
+    height: 75vh
+}
+
+.h-screen-1\/5 {
+    height: 20vh
+}
+
+.h-screen-2\/5 {
+    height: 40vh
+}
+
+.h-screen-3\/5 {
+    height: 60vh
+}
+
+.h-screen-4\/5 {
+    height: 80vh
+}
+
+.h-screen-1\/6 {
+    height: 16.666667vh
+}
+
+.h-screen-2\/6 {
+    height: 33.333333vh
+}
+
+.h-screen-3\/6 {
+    height: 50vh
+}
+
+.h-screen-4\/6 {
+    height: 66.666667vh
+}
+
+.h-screen-5\/6 {
+    height: 83.333333vh
+}
+
+.h-screen-1\/12 {
+    height: 8.333333vh
+}
+
+.h-screen-2\/12 {
+    height: 16.666667vh
+}
+
+.h-screen-3\/12 {
+    height: 25vh
+}
+
+.h-screen-4\/12 {
+    height: 33.333333vh
+}
+
+.h-screen-5\/12 {
+    height: 41.666667vh
+}
+
+.h-screen-6\/12 {
+    height: 50vh
+}
+
+.h-screen-7\/12 {
+    height: 58.333333vh
+}
+
+.h-screen-8\/12 {
+    height: 66.666667vh
+}
+
+.h-screen-9\/12 {
+    height: 75vh
+}
+
+.h-screen-10\/12 {
+    height: 83.333333vh
+}
+
+.h-screen-11\/12 {
+    height: 91.666667vh
+}
+
+
+
+
+.h-screen-w-1\/2 {
+    height: 50vw
+}
+
+.h-screen-w-1\/3 {
+    height: 33.333333vw
+}
+
+.h-screen-w-2\/3 {
+    height: 66.666667vw
+}
+
+.h-screen-w-1\/4 {
+    height: 25vw
+}
+
+.h-screen-w-2\/4 {
+    height: 50vw
+}
+
+.h-screen-w-3\/4 {
+    height: 75vw
+}
+
+.h-screen-w-1\/5 {
+    height: 20vw
+}
+
+.h-screen-w-2\/5 {
+    height: 40vw
+}
+
+.h-screen-w-3\/5 {
+    height: 60vw
+}
+
+.h-screen-w-4\/5 {
+    height: 80vw
+}
+
+.h-screen-w-1\/6 {
+    height: 16.666667vw
+}
+
+.h-screen-w-2\/6 {
+    height: 33.333333vw
+}
+
+.h-screen-w-3\/6 {
+    height: 50vw
+}
+
+.h-screen-w-4\/6 {
+    height: 66.666667vw
+}
+
+.h-screen-w-5\/6 {
+    height: 83.333333vw
+}
+
+.h-screen-w-1\/12 {
+    height: 8.333333vw
+}
+
+.h-screen-w-2\/12 {
+    height: 16.666667vw
+}
+
+.h-screen-w-3\/12 {
+    height: 25vw
+}
+
+.h-screen-w-4\/12 {
+    height: 33.333333vw
+}
+
+.h-screen-w-5\/12 {
+    height: 41.666667vw
+}
+
+.h-screen-w-6\/12 {
+    height: 50vw
+}
+
+.h-screen-w-7\/12 {
+    height: 58.333333vw
+}
+
+.h-screen-w-8\/12 {
+    height: 66.666667vw
+}
+
+.h-screen-w-9\/12 {
+    height: 75vw
+}
+
+.h-screen-w-10\/12 {
+    height: 83.333333vw
+}
+
+.h-screen-w-11\/12 {
+    height: 91.666667vw
+}
+
+
+.text-screen-w-3 {
+    font-size: 3vw;
+}
+.text-screen-w-4 {
+    font-size: 4vw;
+}
+
+.text-screen-w-6 {
+    font-size: 6vw;
+}
+.text-screen-w-8 {
+    font-size: 8vw;
+}
+
+@media (min-width: 640px) {
+
+    .sm\:w-screen-1\/2 {
+        width: 50vw
+    }
+
+    .sm\:w-screen-1\/3 {
+        width: 33.333333vw
+    }
+
+    .sm\:w-screen-2\/3 {
+        width: 66.666667vw
+    }
+
+    .sm\:w-screen-1\/4 {
+        width: 25vw
+    }
+
+    .sm\:w-screen-2\/4 {
+        width: 50vw
+    }
+
+    .sm\:w-screen-3\/4 {
+        width: 75vw
+    }
+
+    .sm\:w-screen-1\/5 {
+        width: 20vw
+    }
+
+    .sm\:w-screen-2\/5 {
+        width: 40vw
+    }
+
+    .sm\:w-screen-3\/5 {
+        width: 60vw
+    }
+
+    .sm\:w-screen-4\/5 {
+        width: 80vw
+    }
+
+    .sm\:w-screen-1\/6 {
+        width: 16.666667vw
+    }
+
+    .sm\:w-screen-2\/6 {
+        width: 33.333333vw
+    }
+
+    .sm\:w-screen-3\/6 {
+        width: 50vw
+    }
+
+    .sm\:w-screen-4\/6 {
+        width: 66.666667vw
+    }
+
+    .sm\:w-screen-5\/6 {
+        width: 83.333333vw
+    }
+
+    .sm\:w-screen-1\/12 {
+        width: 8.333333vw
+    }
+
+    .sm\:w-screen-2\/12 {
+        width: 16.666667vw
+    }
+
+    .sm\:w-screen-3\/12 {
+        width: 25vw
+    }
+
+    .sm\:w-screen-4\/12 {
+        width: 33.333333vw
+    }
+
+    .sm\:w-screen-5\/12 {
+        width: 41.666667vw
+    }
+
+    .sm\:w-screen-6\/12 {
+        width: 50vw
+    }
+
+    .sm\:w-screen-7\/12 {
+        width: 58.333333vw
+    }
+
+    .sm\:w-screen-8\/12 {
+        width: 66.666667vw
+    }
+
+    .sm\:w-screen-9\/12 {
+        width: 75vw
+    }
+
+    .sm\:w-screen-10\/12 {
+        width: 83.333333vw
+    }
+
+    .sm\:w-screen-11\/12 {
+        width: 91.666667vw
+    }
+
+    .sm\:w-screen-h-1\/2 {
+        width: 50vh
+    }
+
+    .sm\:w-screen-h-1\/3 {
+        width: 33.333333vh
+    }
+
+    .sm\:w-screen-h-2\/3 {
+        width: 66.666667vh
+    }
+
+    .sm\:w-screen-h-1\/4 {
+        width: 25vh
+    }
+
+    .sm\:w-screen-h-2\/4 {
+        width: 50vh
+    }
+
+    .sm\:w-screen-h-3\/4 {
+        width: 75vh
+    }
+
+    .sm\:w-screen-h-1\/5 {
+        width: 20vh
+    }
+
+    .sm\:w-screen-h-2\/5 {
+        width: 40vh
+    }
+
+    .sm\:w-screen-h-3\/5 {
+        width: 60vh
+    }
+
+    .sm\:w-screen-h-4\/5 {
+        width: 80vh
+    }
+
+    .sm\:w-screen-h-1\/6 {
+        width: 16.666667vh
+    }
+
+    .sm\:w-screen-h-2\/6 {
+        width: 33.333333vh
+    }
+
+    .sm\:w-screen-h-3\/6 {
+        width: 50vh
+    }
+
+    .sm\:w-screen-h-4\/6 {
+        width: 66.666667vh
+    }
+
+    .sm\:w-screen-h-5\/6 {
+        width: 83.333333vh
+    }
+
+    .sm\:w-screen-h-1\/12 {
+        width: 8.333333vh
+    }
+
+    .sm\:w-screen-h-2\/12 {
+        width: 16.666667vh
+    }
+
+    .sm\:w-screen-h-3\/12 {
+        width: 25vh
+    }
+
+    .sm\:w-screen-h-4\/12 {
+        width: 33.333333vh
+    }
+
+    .sm\:w-screen-h-5\/12 {
+        width: 41.666667vh
+    }
+
+    .sm\:w-screen-h-6\/12 {
+        width: 50vh
+    }
+
+    .sm\:w-screen-h-7\/12 {
+        width: 58.333333vh
+    }
+
+    .sm\:w-screen-h-8\/12 {
+        width: 66.666667vh
+    }
+
+    .sm\:w-screen-h-9\/12 {
+        width: 75vh
+    }
+
+    .sm\:w-screen-h-10\/12 {
+        width: 83.333333vh
+    }
+
+    .sm\:w-screen-h-11\/12 {
+        width: 91.666667vh
+    }
+
+
+
+
+    .sm\:h-screen-1\/2 {
+        height: 50vh
+    }
+
+    .sm\:h-screen-1\/3 {
+        height: 33.333333vh
+    }
+
+    .sm\:h-screen-2\/3 {
+        height: 66.666667vh
+    }
+
+    .sm\:h-screen-1\/4 {
+        height: 25vh
+    }
+
+    .sm\:h-screen-2\/4 {
+        height: 50vh
+    }
+
+    .sm\:h-screen-3\/4 {
+        height: 75vh
+    }
+
+    .sm\:h-screen-1\/5 {
+        height: 20vh
+    }
+
+    .sm\:h-screen-2\/5 {
+        height: 40vh
+    }
+
+    .sm\:h-screen-3\/5 {
+        height: 60vh
+    }
+
+    .sm\:h-screen-4\/5 {
+        height: 80vh
+    }
+
+    .sm\:h-screen-1\/6 {
+        height: 16.666667vh
+    }
+
+    .sm\:h-screen-2\/6 {
+        height: 33.333333vh
+    }
+
+    .sm\:h-screen-3\/6 {
+        height: 50vh
+    }
+
+    .sm\:h-screen-4\/6 {
+        height: 66.666667vh
+    }
+
+    .sm\:h-screen-5\/6 {
+        height: 83.333333vh
+    }
+
+    .sm\:h-screen-1\/12 {
+        height: 8.333333vh
+    }
+
+    .sm\:h-screen-2\/12 {
+        height: 16.666667vh
+    }
+
+    .sm\:h-screen-3\/12 {
+        height: 25vh
+    }
+
+    .sm\:h-screen-4\/12 {
+        height: 33.333333vh
+    }
+
+    .sm\:h-screen-5\/12 {
+        height: 41.666667vh
+    }
+
+    .sm\:h-screen-6\/12 {
+        height: 50vh
+    }
+
+    .sm\:h-screen-7\/12 {
+        height: 58.333333vh
+    }
+
+    .sm\:h-screen-8\/12 {
+        height: 66.666667vh
+    }
+
+    .sm\:h-screen-9\/12 {
+        height: 75vh
+    }
+
+    .sm\:h-screen-10\/12 {
+        height: 83.333333vh
+    }
+
+    .sm\:h-screen-11\/12 {
+        height: 91.666667vh
+    }
+
+
+
+
+    .sm\:h-screen-w-1\/2 {
+        height: 50vw
+    }
+
+    .sm\:h-screen-w-1\/3 {
+        height: 33.333333vw
+    }
+
+    .sm\:h-screen-w-2\/3 {
+        height: 66.666667vw
+    }
+
+    .sm\:h-screen-w-1\/4 {
+        height: 25vw
+    }
+
+    .sm\:h-screen-w-2\/4 {
+        height: 50vw
+    }
+
+    .sm\:h-screen-w-3\/4 {
+        height: 75vw
+    }
+
+    .sm\:h-screen-w-1\/5 {
+        height: 20vw
+    }
+
+    .sm\:h-screen-w-2\/5 {
+        height: 40vw
+    }
+
+    .sm\:h-screen-w-3\/5 {
+        height: 60vw
+    }
+
+    .sm\:h-screen-w-4\/5 {
+        height: 80vw
+    }
+
+    .sm\:h-screen-w-1\/6 {
+        height: 16.666667vw
+    }
+
+    .sm\:h-screen-w-2\/6 {
+        height: 33.333333vw
+    }
+
+    .sm\:h-screen-w-3\/6 {
+        height: 50vw
+    }
+
+    .sm\:h-screen-w-4\/6 {
+        height: 66.666667vw
+    }
+
+    .sm\:h-screen-w-5\/6 {
+        height: 83.333333vw
+    }
+
+    .sm\:h-screen-w-1\/12 {
+        height: 8.333333vw
+    }
+
+    .sm\:h-screen-w-2\/12 {
+        height: 16.666667vw
+    }
+
+    .sm\:h-screen-w-3\/12 {
+        height: 25vw
+    }
+
+    .sm\:h-screen-w-4\/12 {
+        height: 33.333333vw
+    }
+
+    .sm\:h-screen-w-5\/12 {
+        height: 41.666667vw
+    }
+
+    .sm\:h-screen-w-6\/12 {
+        height: 50vw
+    }
+
+    .sm\:h-screen-w-7\/12 {
+        height: 58.333333vw
+    }
+
+    .sm\:h-screen-w-8\/12 {
+        height: 66.666667vw
+    }
+
+    .sm\:h-screen-w-9\/12 {
+        height: 75vw
+    }
+
+    .sm\:h-screen-w-10\/12 {
+        height: 83.333333vw
+    }
+
+    .sm\:h-screen-w-11\/12 {
+        height: 91.666667vw
+    }
+
+    .sm\:text-screen-w-3 {
+        font-size: 3vw;
+    }
+    .sm\:text-screen-w-4 {
+        font-size: 4vw;
+    }
+    .sm\:text-screen-w-6 {
+        font-size: 6vw;
+    }
+    .sm\:text-screen-w-8 {
+        font-size: 8vw;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .md\:w-screen-1\/2 {
+        width: 50vw
+    }
+
+    .md\:w-screen-1\/3 {
+        width: 33.333333vw
+    }
+
+    .md\:w-screen-2\/3 {
+        width: 66.666667vw
+    }
+
+    .md\:w-screen-1\/4 {
+        width: 25vw
+    }
+
+    .md\:w-screen-2\/4 {
+        width: 50vw
+    }
+
+    .md\:w-screen-3\/4 {
+        width: 75vw
+    }
+
+    .md\:w-screen-1\/5 {
+        width: 20vw
+    }
+
+    .md\:w-screen-2\/5 {
+        width: 40vw
+    }
+
+    .md\:w-screen-3\/5 {
+        width: 60vw
+    }
+
+    .md\:w-screen-4\/5 {
+        width: 80vw
+    }
+
+    .md\:w-screen-1\/6 {
+        width: 16.666667vw
+    }
+
+    .md\:w-screen-2\/6 {
+        width: 33.333333vw
+    }
+
+    .md\:w-screen-3\/6 {
+        width: 50vw
+    }
+
+    .md\:w-screen-4\/6 {
+        width: 66.666667vw
+    }
+
+    .md\:w-screen-5\/6 {
+        width: 83.333333vw
+    }
+
+    .md\:w-screen-1\/12 {
+        width: 8.333333vw
+    }
+
+    .md\:w-screen-2\/12 {
+        width: 16.666667vw
+    }
+
+    .md\:w-screen-3\/12 {
+        width: 25vw
+    }
+
+    .md\:w-screen-4\/12 {
+        width: 33.333333vw
+    }
+
+    .md\:w-screen-5\/12 {
+        width: 41.666667vw
+    }
+
+    .md\:w-screen-6\/12 {
+        width: 50vw
+    }
+
+    .md\:w-screen-7\/12 {
+        width: 58.333333vw
+    }
+
+    .md\:w-screen-8\/12 {
+        width: 66.666667vw
+    }
+
+    .md\:w-screen-9\/12 {
+        width: 75vw
+    }
+
+    .md\:w-screen-10\/12 {
+        width: 83.333333vw
+    }
+
+    .md\:w-screen-11\/12 {
+        width: 91.666667vw
+    }
+
+    .md\:w-screen-h-1\/2 {
+        width: 50vh
+    }
+
+    .md\:w-screen-h-1\/3 {
+        width: 33.333333vh
+    }
+
+    .md\:w-screen-h-2\/3 {
+        width: 66.666667vh
+    }
+
+    .md\:w-screen-h-1\/4 {
+        width: 25vh
+    }
+
+    .md\:w-screen-h-2\/4 {
+        width: 50vh
+    }
+
+    .md\:w-screen-h-3\/4 {
+        width: 75vh
+    }
+
+    .md\:w-screen-h-1\/5 {
+        width: 20vh
+    }
+
+    .md\:w-screen-h-2\/5 {
+        width: 40vh
+    }
+
+    .md\:w-screen-h-3\/5 {
+        width: 60vh
+    }
+
+    .md\:w-screen-h-4\/5 {
+        width: 80vh
+    }
+
+    .md\:w-screen-h-1\/6 {
+        width: 16.666667vh
+    }
+
+    .md\:w-screen-h-2\/6 {
+        width: 33.333333vh
+    }
+
+    .md\:w-screen-h-3\/6 {
+        width: 50vh
+    }
+
+    .md\:w-screen-h-4\/6 {
+        width: 66.666667vh
+    }
+
+    .md\:w-screen-h-5\/6 {
+        width: 83.333333vh
+    }
+
+    .md\:w-screen-h-1\/12 {
+        width: 8.333333vh
+    }
+
+    .md\:w-screen-h-2\/12 {
+        width: 16.666667vh
+    }
+
+    .md\:w-screen-h-3\/12 {
+        width: 25vh
+    }
+
+    .md\:w-screen-h-4\/12 {
+        width: 33.333333vh
+    }
+
+    .md\:w-screen-h-5\/12 {
+        width: 41.666667vh
+    }
+
+    .md\:w-screen-h-6\/12 {
+        width: 50vh
+    }
+
+    .md\:w-screen-h-7\/12 {
+        width: 58.333333vh
+    }
+
+    .md\:w-screen-h-8\/12 {
+        width: 66.666667vh
+    }
+
+    .md\:w-screen-h-9\/12 {
+        width: 75vh
+    }
+
+    .md\:w-screen-h-10\/12 {
+        width: 83.333333vh
+    }
+
+    .md\:w-screen-h-11\/12 {
+        width: 91.666667vh
+    }
+
+
+
+
+    .md\:h-screen-1\/2 {
+        height: 50vh
+    }
+
+    .md\:h-screen-1\/3 {
+        height: 33.333333vh
+    }
+
+    .md\:h-screen-2\/3 {
+        height: 66.666667vh
+    }
+
+    .md\:h-screen-1\/4 {
+        height: 25vh
+    }
+
+    .md\:h-screen-2\/4 {
+        height: 50vh
+    }
+
+    .md\:h-screen-3\/4 {
+        height: 75vh
+    }
+
+    .md\:h-screen-1\/5 {
+        height: 20vh
+    }
+
+    .md\:h-screen-2\/5 {
+        height: 40vh
+    }
+
+    .md\:h-screen-3\/5 {
+        height: 60vh
+    }
+
+    .md\:h-screen-4\/5 {
+        height: 80vh
+    }
+
+    .md\:h-screen-1\/6 {
+        height: 16.666667vh
+    }
+
+    .md\:h-screen-2\/6 {
+        height: 33.333333vh
+    }
+
+    .md\:h-screen-3\/6 {
+        height: 50vh
+    }
+
+    .md\:h-screen-4\/6 {
+        height: 66.666667vh
+    }
+
+    .md\:h-screen-5\/6 {
+        height: 83.333333vh
+    }
+
+    .md\:h-screen-1\/12 {
+        height: 8.333333vh
+    }
+
+    .md\:h-screen-2\/12 {
+        height: 16.666667vh
+    }
+
+    .md\:h-screen-3\/12 {
+        height: 25vh
+    }
+
+    .md\:h-screen-4\/12 {
+        height: 33.333333vh
+    }
+
+    .md\:h-screen-5\/12 {
+        height: 41.666667vh
+    }
+
+    .md\:h-screen-6\/12 {
+        height: 50vh
+    }
+
+    .md\:h-screen-7\/12 {
+        height: 58.333333vh
+    }
+
+    .md\:h-screen-8\/12 {
+        height: 66.666667vh
+    }
+
+    .md\:h-screen-9\/12 {
+        height: 75vh
+    }
+
+    .md\:h-screen-10\/12 {
+        height: 83.333333vh
+    }
+
+    .md\:h-screen-11\/12 {
+        height: 91.666667vh
+    }
+
+
+
+
+    .md\:h-screen-w-1\/2 {
+        height: 50vw
+    }
+
+    .md\:h-screen-w-1\/3 {
+        height: 33.333333vw
+    }
+
+    .md\:h-screen-w-2\/3 {
+        height: 66.666667vw
+    }
+
+    .md\:h-screen-w-1\/4 {
+        height: 25vw
+    }
+
+    .md\:h-screen-w-2\/4 {
+        height: 50vw
+    }
+
+    .md\:h-screen-w-3\/4 {
+        height: 75vw
+    }
+
+    .md\:h-screen-w-1\/5 {
+        height: 20vw
+    }
+
+    .md\:h-screen-w-2\/5 {
+        height: 40vw
+    }
+
+    .md\:h-screen-w-3\/5 {
+        height: 60vw
+    }
+
+    .md\:h-screen-w-4\/5 {
+        height: 80vw
+    }
+
+    .md\:h-screen-w-1\/6 {
+        height: 16.666667vw
+    }
+
+    .md\:h-screen-w-2\/6 {
+        height: 33.333333vw
+    }
+
+    .md\:h-screen-w-3\/6 {
+        height: 50vw
+    }
+
+    .md\:h-screen-w-4\/6 {
+        height: 66.666667vw
+    }
+
+    .md\:h-screen-w-5\/6 {
+        height: 83.333333vw
+    }
+
+    .md\:h-screen-w-1\/12 {
+        height: 8.333333vw
+    }
+
+    .md\:h-screen-w-2\/12 {
+        height: 16.666667vw
+    }
+
+    .md\:h-screen-w-3\/12 {
+        height: 25vw
+    }
+
+    .md\:h-screen-w-4\/12 {
+        height: 33.333333vw
+    }
+
+    .md\:h-screen-w-5\/12 {
+        height: 41.666667vw
+    }
+
+    .md\:h-screen-w-6\/12 {
+        height: 50vw
+    }
+
+    .md\:h-screen-w-7\/12 {
+        height: 58.333333vw
+    }
+
+    .md\:h-screen-w-8\/12 {
+        height: 66.666667vw
+    }
+
+    .md\:h-screen-w-9\/12 {
+        height: 75vw
+    }
+
+    .md\:h-screen-w-10\/12 {
+        height: 83.333333vw
+    }
+
+    .md\:h-screen-w-11\/12 {
+        height: 91.666667vw
+    }
+
+    .md\:text-screen-w-3 {
+        font-size: 3vw;
+    }
+    .md\:text-screen-w-4 {
+        font-size: 4vw;
+    }
+
+    .md\:text-screen-w-6 {
+        font-size: 6vw;
+    }
+    .md\:text-screen-w-8 {
+        font-size: 8vw;
+    }
+
+}
