@@ -25,7 +25,7 @@ option.filters = [
         factory: Factory,
         poolOption: {
             max: 10,
-            min: 1
+            min: 1,
         },
         using,
         domExcludes: []

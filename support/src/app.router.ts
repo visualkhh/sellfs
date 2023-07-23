@@ -20,10 +20,12 @@ import {Intent} from 'simple-boot-core/intent/Intent';
 export class AppRouter implements RouterAction {
     private child: any;
     async canActivate(url: Intent, module: any) {
+        console.log('------@>', this.child, url, module?.constructor?.name);
         this.child = module;
     }
 
     hasActivate(checkObj: any): boolean {
+        console.log('------>', this.child);
         return this.child === checkObj;
     }
 }
