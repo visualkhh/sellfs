@@ -1,4 +1,4 @@
-// import {AnonServiceFront} from '@front/services/AnonServiceFront';
+// // import {AnonServiceFront} from '@front/services/AnonServiceFront';
 import Factory, { MakeSimFrontOption } from '@src/bootfactory';
 // import { AuthServiceFront } from '@front/services/AuthServiceFront';
 // import { LiveServiceFront } from '@front/services/LiveServiceFront';
@@ -18,3 +18,5 @@ Factory.create(MakeSimFrontOption(window), using).then(it => {
     it.run();
     // console.log(it)
 });
+
+console.log('------')

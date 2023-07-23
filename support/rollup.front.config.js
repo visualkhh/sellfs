@@ -12,6 +12,16 @@ import del from 'rollup-plugin-delete'
 export default {
 	input: 'front/index.ts',
 	output: {
+		banner: `
+		var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+
+`,
 		sourcemap: true,
 		dir: 'dist-front',
 		entryFileNames: 'bundle.js',
@@ -25,11 +35,11 @@ export default {
 		copy({
 			targets: [
 				{ src: 'index.html', dest: 'dist-front' },
-				{ src: 'offline.html', dest: 'dist-front' },
-				{ src: 'service-worker.js', dest: 'dist-front' },
-				{ src: 'manifest.json', dest: 'dist-front' },
-				{ src: 'pwabuilder-sw.js', dest: 'dist-front' },
-				{ src: 'googlebe4b1abe81ab7cf3.html', dest: 'dist-front' },
+				// { src: 'offline.html', dest: 'dist-front' },
+				// { src: 'service-worker.js', dest: 'dist-front' },
+				// { src: 'manifest.json', dest: 'dist-front' },
+				// { src: 'pwabuilder-sw.js', dest: 'dist-front' },
+				// { src: 'googlebe4b1abe81ab7cf3.html', dest: 'dist-front' },
 				{ src: 'favicon.ico', dest: 'dist-front' },
 				{ src: 'assets', dest: 'dist-front' }
 			]

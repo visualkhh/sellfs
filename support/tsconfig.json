@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "target": "es5",
-    "module": "ES2015",
+    "target": "ES2022",
+    "module": "ES2022",
     "strict": true,
     "moduleResolution": "node",                  /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "esModuleInterop": true,
@@ -12,6 +12,7 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+    "importHelpers": false,
     "baseUrl": "src",
     "typeRoots": ["./node_modules/@types", "./types", "jest"],
     "types" : ["jest", "node", "index", "rxjs"],
@@ -29,8 +30,11 @@
     },
     "lib": [
       "dom",
+      "dom.iterable",
+      "esnext",
       "es5",
-      "es2017",
+      "es2015",
+      "es2019",
       "scripthost",
       "es2015.proxy",
       "es2015.collection"
