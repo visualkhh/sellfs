@@ -361,3 +361,4 @@ gradle-app.setting
 /**/dist-**/
 /temp/
 /package-lock.json
+/test
