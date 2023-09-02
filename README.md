@@ -34,7 +34,7 @@ npm install
 npm run tsc:watch
 ```
 
-support
+selffs
 ```
 cd support <- root directory
 npm run bundle:front:watch --workspace=support
