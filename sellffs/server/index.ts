@@ -8,9 +8,6 @@ import {AppRouter} from '@src/app.router';
 import {ResourceFilter} from 'simple-boot-http-server/filters/ResourceFilter';
 import {UserServerService} from '@server/services/UserServerService';
 
-const using: ConstructorType<any>[] = [
-    UserServerService
-];
 
 const otherInstanceSim = new Map<ConstructorType<any>, any>();
 const option = new HttpServerOption();
@@ -27,7 +24,7 @@ option.filters = [
             max: 10,
             min: 1,
         },
-        using,
+        using: [UserServerService],
         domExcludes: []
     }, otherInstanceSim)
 ];

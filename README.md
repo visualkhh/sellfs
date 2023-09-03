@@ -40,11 +40,11 @@ npm install
 npm run tsc:watch
 ```
 
-### selffs
+### sellffs
 ```
-cd selffs <- root directory
+cd sellffs <- root directory
 npm install
-npm run bundle:front:watch --workspace=selffs
-npm run bundle:server:watch --workspace=selffs
-npm run serve:server:watch --workspace=selffs
+npm run bundle:front:watch --workspace=sellffs
+npm run bundle:server:watch --workspace=sellffs
+npm run serve:server:watch --workspace=sellffs
 ```
