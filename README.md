@@ -8,6 +8,8 @@ git submodule update
 ### dom-render
 ```shell
 cd libs/dom-render
+git switch master
+git pull
 npm install
 npm run tsc:watch
 ```
@@ -15,6 +17,8 @@ npm run tsc:watch
 ### simple-boot-core
 ```shell
 cd libs/simple-boot-core
+git switch master
+git pull
 npm install
 npm run tsc:watch
 ```
@@ -22,6 +26,8 @@ npm run tsc:watch
 ### simple-boot-front
 ```shell
 cd libs/simple-boot-front
+git switch master
+git pull
 npm install
 npm run tsc:watch
 ```
@@ -29,6 +35,8 @@ npm run tsc:watch
 ### simple-boot-http-server
 ```shell
 cd libs/simple-boot-http-server
+git switch master
+git pull
 npm install
 npm run tsc:watch
 ```
@@ -36,15 +44,17 @@ npm run tsc:watch
 ### simple-boot-http-ssr
 ```shell
 cd libs/simple-boot-http-ssr
+git switch master
+git pull
 npm install
 npm run tsc:watch
 ```
 
 ### sellffs
 ```
-cd sellffs <- root directory
+cd sellfs <- root directory
 npm install
-npm run bundle:front:watch --workspace=sellffs
-npm run bundle:server:watch --workspace=sellffs
-npm run serve:server:watch --workspace=sellffs
+npm run bundle:front:watch --workspace=sellfs
+npm run bundle:server:watch --workspace=sellfs
+npm run serve:server:watch --workspace=sellfs
 ```
