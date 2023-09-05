@@ -16,7 +16,7 @@ import {Intent} from 'simple-boot-core/intent/Intent';
 })
 @Component({
     template: template,
-    styles: ['h1{color:yellow}']
+    styles: ['h1{color:yellow}', 'h5{color:pink}']
 })
 export class AppRouter implements RouterAction {
     private child: any;
