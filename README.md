@@ -58,3 +58,18 @@ npm run bundle:front:watch --workspace=sellfs
 npm run bundle:server:watch --workspace=sellfs
 npm run serve:server:watch --workspace=sellfs
 ```
+
+
+# project develop start
+```shell
+npm run app:bundle:watch
+npm run app:bundle:watch
+npm run serve:watch
+```
+
+
+# db setting
+```sql
+CREATE DATABASE sellfs CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER DATABASE sellfs CHARACTER SET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```

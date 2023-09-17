@@ -7,7 +7,8 @@ import {SimpleBootHttpSSRServer} from 'simple-boot-http-ssr';
 import {AppRouter} from '@src/app.router';
 import {ResourceFilter} from 'simple-boot-http-server/filters/ResourceFilter';
 import {UserServerService} from '@server/services/UserServerService';
-
+import { DBInitializer } from '@server/initializers/DBInitializer';
+import {DataSource, EntityManager} from 'typeorm';
 
 const otherInstanceSim = new Map<ConstructorType<any>, any>();
 const option = new HttpServerOption();
@@ -31,7 +32,15 @@ option.filters = [
 option.listen.listeningListener = (server: SimpleBootHttpSSRServer) => {
     console.log(`startup server ${server.option.listen.port}`);
 }
-new SimpleBootHttpSSRServer(AppRouter, option).run(otherInstanceSim);
+
+
+Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
+    otherInstanceSim.set(DataSource, connection);
+}).then(() => {
+    new SimpleBootHttpSSRServer(AppRouter, option).run(otherInstanceSim);
+}).then(() => {
+    console.log('server startUp finish!!', option.listen);
+});
 
 // const ssr = new SimpleBootHttpSSRServer(IndexRouter, option);
 // await ssr.run(otherInstanceSim);

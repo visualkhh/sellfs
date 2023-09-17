@@ -21,7 +21,8 @@
     "lib:build": "concurrently \"npm run tsc -w dom-render\" \"npm run tsc -w simple-boot-core\" \"npm run tsc -w simple-boot-front\" \"npm run tsc -w simple-boot-http-server\" \"npm run tsc -w simple-boot-http-ssr\" ",
     "lib:build:clean": "concurrently \"npm run tsc:clean -w dom-render\" \"npm run tsc:clean -w simple-boot-core\" \"npm run tsc:clean -w simple-boot-front\" \"npm run tsc:clean -w simple-boot-http-server\" \"npm run tsc:clean -w simple-boot-http-ssr\" ",
     "lib:build:watch": "concurrently \"npm run tsc:watch -w dom-render\" \"npm run tsc:watch -w simple-boot-core\" \"npm run tsc:watch -w simple-boot-front\" \"npm run tsc:watch -w simple-boot-http-server\" \"npm run tsc:watch -w simple-boot-http-ssr\" ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app:bundle:watch": "concurrently \"npm run bundle:front:watch:sellfs\" \"npm run bundle:server:watch:sellfs\" ",
+    "serve:watch": "npm run serve:server:watch:sellfs"
   },
   "keywords": [],
   "workspaces": [
