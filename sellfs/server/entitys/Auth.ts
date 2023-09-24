@@ -29,10 +29,10 @@ export class Auth {
   @Column({name: 'updated_at', default: () => 'CURRENT_TIMESTAMP'})
   updatedAt?: Date;
 
-  // constructor({type, name, createdAt, updatedAt}: { type?: AuthType, name?: string, createdAt?: Date, updatedAt?: Date } = {}) {
-  //     this.type = type;
-  //     this.name = name;
-  //     this.createdAt = createdAt;
-  //     this.updatedAt = updatedAt;
-  // }
+  constructor({type, name, createdAt, updatedAt}: { type?: AuthType, name?: string, createdAt?: Date, updatedAt?: Date } = {}) {
+      this.type = type;
+      this.name = name;
+      this.createdAt = createdAt;
+      this.updatedAt = updatedAt;
+  }
 }
