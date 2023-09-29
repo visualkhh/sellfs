@@ -19,8 +19,8 @@
     "bundle:server:dev:watch:sellfs": "npm run bundle:server:dev:watch --workspace=sellfs",
     "bundle:server:prod:sellfs": "npm run bundle:server:prod --workspace=sellfs",
     "lib:build": "concurrently \"npm run tsc -w dom-render\" \"npm run tsc -w simple-boot-core\" \"npm run tsc -w simple-boot-front\" \"npm run tsc -w simple-boot-http-server\" \"npm run tsc -w simple-boot-http-ssr\" ",
-    "lib:build:clean": "concurrently \"npm run tsc:clean -w dom-render\" \"npm run tsc:clean -w simple-boot-core\" \"npm run tsc:clean -w simple-boot-front\" \"npm run tsc:clean -w simple-boot-http-server\" \"npm run tsc:clean -w simple-boot-http-ssr\" ",
-    "lib:build:watch": "concurrently \"npm run tsc:watch -w dom-render\" \"npm run tsc:watch -w simple-boot-core\" \"npm run tsc:watch -w simple-boot-front\" \"npm run tsc:watch -w simple-boot-http-server\" \"npm run tsc:watch -w simple-boot-http-ssr\" ",
+    "lib:build:clean": "concurrently \"cd libs/dom-render && npm run tsc:clean\" \"cd libs/simple-boot-core && npm run tsc:clean\" \"cd libs/simple-boot-front && npm run tsc:clean\" \"cd libs/simple-boot-http-server && npm run tsc:clean\" \"cd libs/simple-boot-http-ssr && npm run tsc:clean\" ",
+    "lib:build:watch": "concurrently \"cd libs/dom-render && npm run tsc:watch\" \"cd libs/simple-boot-core && npm run tsc:watch\" \"cd libs/simple-boot-front && npm run tsc:watch\" \"cd libs/simple-boot-http-server && npm run tsc:watch\" \"cd libs/simple-boot-http-ssr && npm run tsc:watch\" ",
     "app:bundle:watch": "concurrently \"npm run bundle:front:watch:sellfs\" \"npm run bundle:server:watch:sellfs\" ",
     "serve:watch": "npm run serve:server:watch:sellfs"
   },
