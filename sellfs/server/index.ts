@@ -9,6 +9,7 @@ import {ResourceFilter} from 'simple-boot-http-server/filters/ResourceFilter';
 import {UserServerService} from '@server/services/UserServerService';
 import { DBInitializer } from '@server/initializers/DBInitializer';
 import {DataSource, EntityManager} from 'typeorm';
+import { IntentSchemeFilter } from 'simple-boot-http-ssr/filters/IntentSchemeFilter';
 
 const otherInstanceSim = new Map<ConstructorType<any>, any>();
 const option = new HttpServerOption();
@@ -17,6 +18,7 @@ option.filters = [
     new ResourceFilter(frontDistPath,
         ['\\.js$', '\\.map$', '\\.ico$', '\\.png$', '\\.jpg$', '\\.jpeg$', '\\.gif$', 'offline\\.html$', 'webmanifest$', 'manifest\\.json', 'service-worker\\.js$', 'googlebe4b1abe81ab7cf3\\.html$']
     ),
+  IntentSchemeFilter,
     new SSRFilter({
         frontDistPath: frontDistPath,
         factorySimFrontOption: (window: any) => MakeSimFrontOption(window),

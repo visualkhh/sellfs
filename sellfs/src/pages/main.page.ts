@@ -8,7 +8,7 @@ import {UserService} from '@src/services/UserService';
     template: '<h1>MainPage</h1>'
 })
 export class MainPage {
-    constructor(@Inject({scheme: UserService.scheme}) private userService: UserService.UserService) {
+    constructor( private userService: UserService) {
         console.log('main constructor');
         this.userService.say('main');
     }
