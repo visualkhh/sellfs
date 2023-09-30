@@ -7,6 +7,7 @@ import { OnInit } from 'simple-boot-front/lifecycle/OnInit';
 import { OnRoute } from 'simple-boot-core/decorators/route/OnRoute';
 import { Intent } from 'simple-boot-core/intent/Intent';
 import { RouterModule } from 'simple-boot-core/route/RouterModule';
+import { DefaultProjectService, ProjectService } from '@src/services/ProjectService';
 
 
 @Sim
@@ -71,8 +72,8 @@ export class SubBPage {
   ]
 })
 export class SubPage implements OnInit {
-  constructor(private userService: UserService) {
-    console.log('main constructor');
+  constructor(private userService: UserService, @Inject({symbol: ProjectService.SIM_CONFIG.symbol }) private projectSerive: ProjectService) {
+    console.log('main constructor', projectSerive);
     this.userService.say('sub');
   }
 
