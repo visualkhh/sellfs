@@ -76,9 +76,9 @@ export class SubPage implements OnInit {
     this.userService.say('sub');
   }
 
-  test() {
-    this.userService.test({wow: '22'});
-    console.log('test');
+  async test() {
+   const data =  await this.userService.test({wow: '22'});
+    console.log('test', data);
   }
 
   @OnRoute({isActivateMe: true})

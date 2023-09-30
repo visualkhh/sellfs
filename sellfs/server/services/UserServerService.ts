@@ -1,13 +1,10 @@
 import {UserService} from '@src/services/UserService'
 import {Sim} from 'simple-boot-core/decorators/SimDecorator';
-import { IntentSchemeServer } from 'simple-boot-http-ssr/decorators/IntentSchemeServer';
-import { prefix } from 'concurrently/dist/src/defaults';
 import { SimstanceManager } from 'simple-boot-core/simstance/SimstanceManager';
-import { IntentSchemeServerProxyHandler } from 'simple-boot-http-ssr/proxy/IntentSchemeServerProxyHandler';
-// @IntentSchemeServer
+import { IntentSchemeServerProxy } from 'simple-boot-http-ssr/proxy/IntentSchemeServerProxy';
 @Sim({
     ...UserService.SIM_CONFIG,
-    proxy: new IntentSchemeServerProxyHandler()
+    proxy: IntentSchemeServerProxy
 })
 export class UserServerService extends UserService {
 
@@ -20,7 +17,7 @@ export class UserServerService extends UserService {
     }
 
     async test(prefix: any): Promise<any> {
-        console.log('subUserServerService', this);
+        console.log('subUserServerService', prefix);
         return {a: new Date().toISOString()};
     }
 }
