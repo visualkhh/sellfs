@@ -9,8 +9,11 @@ import { Inject } from 'simple-boot-core/decorators/inject/Inject';
 })
 export abstract class UserFront implements User {
 
-  constructor(@Inject({symbol: User.UserRepository.SYMBOL}) private userRepository: User.UserRepository) {
-    console.log('-------UserFront', userRepository);
+  constructor(
+    @Inject({symbol: User.UserRepository.SYMBOL}) private userRepository: User.UserRepository,
+    @Inject({symbol: User.UserRepository2.SYMBOL}) private userRepository2: User.UserRepository2
+  ) {
+    console.log('-------UserFront', userRepository, userRepository2);
   }
   say(prefix: string): void {
     console.log(prefix, '--> frontend-side');
