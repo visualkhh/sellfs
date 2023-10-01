@@ -1,8 +1,7 @@
 import {Entity, Column, PrimaryColumn, PrimaryGeneratedColumn} from 'typeorm';
-import {CodeBase} from 'entitys/CodeBase';
 
 @Entity('code')
-export class Code implements CodeBase {
+export class Code {
 
     @PrimaryColumn()
     code?: string;

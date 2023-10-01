@@ -22,7 +22,8 @@
     "lib:build:clean": "concurrently \"cd libs/dom-render && npm run tsc:clean\" \"cd libs/simple-boot-core && npm run tsc:clean\" \"cd libs/simple-boot-front && npm run tsc:clean\" \"cd libs/simple-boot-http-server && npm run tsc:clean\" \"cd libs/simple-boot-http-ssr && npm run tsc:clean\" ",
     "lib:build:watch": "concurrently \"cd libs/dom-render && npm run tsc:watch\" \"cd libs/simple-boot-core && npm run tsc:watch\" \"cd libs/simple-boot-front && npm run tsc:watch\" \"cd libs/simple-boot-http-server && npm run tsc:watch\" \"cd libs/simple-boot-http-ssr && npm run tsc:watch\" ",
     "app:bundle:watch": "concurrently \"npm run bundle:front:watch:sellfs\" \"npm run bundle:server:watch:sellfs\" ",
-    "serve:watch": "npm run serve:server:watch:sellfs"
+    "serve:watch": "npm run serve:server:watch:sellfs",
+    "serve:server": "npm run serve:server:sellfs"
   },
   "keywords": [],
   "workspaces": [

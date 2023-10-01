@@ -1,6 +1,7 @@
 import Factory, { MakeSimFrontOption } from '@src/bootfactory';
-import {UserFrontService} from '@front/services/UserFrontService';
-
-Factory.create(MakeSimFrontOption(window), [UserFrontService]).then(it => {
-    it.run()
+import { UserFront } from '@front/domains/UserFront';
+import { UserRepository } from '@src/persistents/UserRepository';
+// @ts-ignore
+Factory.create(MakeSimFrontOption(window), [UserFront, UserRepository]).then(it => {
+  it.run()
 });

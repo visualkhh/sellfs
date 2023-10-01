@@ -1,8 +1,7 @@
 import {Entity, Column, PrimaryColumn, PrimaryGeneratedColumn} from "typeorm";
-import {UrlBase} from 'entitys/UrlBase';
 
 @Entity('url')
-export class Url implements UrlBase {
+export class Url {
 
     @PrimaryGeneratedColumn()
     id?: number;

@@ -67,7 +67,7 @@ const stream = {
         logger.info(message)
     }
 }
-global.logger = logger;
+// global.logger = logger;
 export { logger, stream };
 //
 // const logger = winston.createLogger({
