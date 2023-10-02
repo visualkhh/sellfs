@@ -11,19 +11,33 @@ import { DataSource, EntityManager } from 'typeorm';
 import { IntentSchemeFilter } from 'simple-boot-http-ssr/filters/IntentSchemeFilter';
 import { IndexRouter } from '@server/routers/IndexRouter';
 import { RequestResponse } from 'simple-boot-http-server/models/RequestResponse';
+import { cacheScheduleManager } from '@server/schedules/CacheScheduleManager';
+import { SecurityFilter } from '@server/filters/SecurityFilter';
+import { GlobalAdvice } from '@server/advices/GlobalAdvice';
+import { RequestLogEndPoint } from '@server/endpoints/RequestLogEndPoint';
+import { CloseLogEndPoint } from '@server/endpoints/CloseLogEndPoint';
+import { ErrorLogEndPoint } from '@server/endpoints/ErrorLogEndPoint';
+import { NotFoundError } from 'simple-boot-http-server/errors/NotFoundError';
 
 
 Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
+  cacheScheduleManager.run(connection);
   const otherInstanceSim = new Map<ConstructorType<any>, any>();
   otherInstanceSim.set(DataSource, connection);
   return otherInstanceSim;
 }).then((otherInstanceSim) => {
   const option = new HttpServerOption();
   const frontDistPath = 'dist-front';
+  option.globalAdvice = new GlobalAdvice();
+  option.requestEndPoints = [new RequestLogEndPoint()];
+  option.closeEndPoints = [new CloseLogEndPoint()];
+  option.errorEndPoints = [new ErrorLogEndPoint()];
+  option.noSuchRouteEndPointMappingThrow = () => new NotFoundError();
   option.filters = [
     new ResourceFilter(frontDistPath,
       ['\\.js$', '\\.map$', '\\.ico$', '\\.png$', '\\.jpg$', '\\.jpeg$', '\\.gif$', 'offline\\.html$', 'webmanifest$', 'manifest\\.json', 'service-worker\\.js$', 'googlebe4b1abe81ab7cf3\\.html$']
     ),
+    SecurityFilter,
     IntentSchemeFilter,
     new SSRFilter({
       frontDistPath: frontDistPath,
@@ -45,7 +59,7 @@ Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
         return false;
       },
       domExcludes: []
-    }, otherInstanceSim)
+    }, otherInstanceSim),
   ];
   option.listen.listeningListener = (server: SimpleBootHttpSSRServer) => {
     console.log(`startup server ${server.option.listen.port}`);

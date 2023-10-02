@@ -76,7 +76,6 @@ export class SubPage implements OnInit {
     @Inject({symbol: User.SYMBOL}) private userService: User,
     // @Inject({symbol: ProjectService.SYMBOL}) private projectSerive: ProjectService,
   ) {
-    console.log('main constructor', userService);
     this.userService.say('sub');
   }
 

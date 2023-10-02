@@ -32,7 +32,7 @@ const loggingFormat = printf(({ level, message }) => {
     return `${timeStamp()} ${level} : ${message}`;
 })
 if (!fs.existsSync(logDir)) {
-    fs.mkdirSync(logDir);
+    fs.mkdirSync(logDir, { recursive: true });
 }
 
 const infoTransport = new transports.Console({

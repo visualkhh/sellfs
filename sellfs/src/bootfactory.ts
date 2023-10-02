@@ -5,7 +5,6 @@ import { ConstructorType } from 'simple-boot-core/types/Types';
 import { SimpleBootHttpSSRFactory } from 'simple-boot-http-ssr/SimpleBootHttpSSRFactory';
 
 export const MakeSimFrontOption = (window: any): SimFrontOption => {
-  console.log('MakeSimFrontOption!!!!', window);
   return new SimFrontOption(window).setUrlType(UrlType.path);
 }
 

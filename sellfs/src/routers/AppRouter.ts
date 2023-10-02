@@ -6,6 +6,8 @@ import {MainPage} from '@src/pages/MainPage';
 import {SubPage} from '@src/pages/SubPage';
 import {RouterAction} from 'simple-boot-core/route/RouterAction';
 import {Intent} from 'simple-boot-core/intent/Intent';
+import { ComponentSet } from 'dom-render/components/ComponentSet';
+import { Notfound } from '@src/components/errors/notfound/Notfound';
 
 @Sim
 @Router({
@@ -21,9 +23,17 @@ import {Intent} from 'simple-boot-core/intent/Intent';
 })
 export class AppRouter implements RouterAction {
     private child: any;
+    // constructor(notfound: Notfound) {
+    //     console.log('------->', notfound)
+    // }
     async canActivate(url: Intent, module: any) {
-        // console.log('------@>', this.child, url, module?.constructor?.name);
-        this.child = module;
+        console.log('------@>', this.child, url, module, module?.constructor?.name);
+        if (module) {
+            this.child = module;
+        } else {
+            // const c = new ComponentSet({}, '<div>111</div>')
+            this.child = Notfound;
+        }
     }
 
     hasActivate(checkObj: any): boolean {

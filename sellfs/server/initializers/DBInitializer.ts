@@ -7,6 +7,7 @@ import { Code } from '@server/entitys/Code';
 import { Url } from '@server/entitys/Url';
 import bcrypt from 'bcrypt';
 import { AuthType } from '@src/codes/AuthType';
+import { User } from '@src/domains/User';
 
 const dbConfig = Object.assign(environment.typeormConfig, {
   entities: [
@@ -39,15 +40,16 @@ export class DBInitializer {
       let urls = [
         new Url({name: 'index', path: '/'}),
         new Url({name: 'signs', path: '^/signs.*', regexp: true}),
-        new Url({name: 'pets', path: `^/pets.*`, regexp: true}),
+        new Url({name: 'pets', path: `^/api/anons(/.*)?$`, regexp: true}),
+        new Url({name: 'apis-test', path: '^/api/test.*', regexp: true}),
         // new Url({name: 'anonService-intent', path: `^${AnonServiceScheme}://.*`, regexp: true}),
         // new Url({name: 'anonPetService-intent', path: `^${AnonPetServiceScheme}://.*`, regexp: true}),
         // new Url({name: 'storeService-intent', path: `^${StoreServiceScheme}://.*`, regexp: true}),
         new Url({name: 'stores', path: '^/stores(/[0-9]+)?$', regexp: true}),
         // new Url({name: 'stores', path: '^/stores.*', regexp: true}),
         new Url({name: 'lives', path: '^/lives.*', regexp: true}),
+        // new Url({name: 'liveService-intent', path: `^${User.SCHEME}://.*`, regexp: true}),
         // new Url({name: 'liveService-intent', path: `^${LiveServiceScheme}://.*`, regexp: true}),
-        new Url({name: 'apis-test', path: '^/apis/test.*', regexp: true}),
       ];
       for (const it of urls) {
         const url = await transactionalEntityManager.save(it);

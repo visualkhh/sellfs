@@ -1,9 +1,7 @@
 import { Entity, Column, PrimaryColumn, PrimaryGeneratedColumn, OneToMany, JoinColumn } from 'typeorm';
-import { AuthBase } from 'entitys/AuthBase';
 import { AuthType } from 'codes/AuthType';
 import { AuthUrl } from '@server/entitys/AuthUrl';
 import { Account } from '@server/entitys/Account';
-// import { Account2 } from '@server/entitys/Account2';
 
 @Entity('auth')
 export class Auth {
