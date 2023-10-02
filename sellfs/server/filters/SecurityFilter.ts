@@ -31,10 +31,11 @@ export class SecurityFilter implements Filter {
     //     await this.syncAuths()
     // }
     const contentType = rr.reqHeaderFirst(HttpHeaders.ContentType);
+    const accept = rr.reqHeaderFirst(HttpHeaders.Accept);
     const authorization = rr.reqHeaderFirst(HttpHeaders.Authorization);
     const intent = rr.reqHeaderFirst(SSRHttpHeaders.XSimpleBootSsrIntentScheme);
 
-    if (!(contentType?.includes(Mimes.ApplicationJson) || contentType?.includes(SSRMimes.ApplicationJsonPostSimpleBootSsrIntentScheme))) {
+    if (accept?.includes(Mimes.TextHtml)) {
       return true;
     }
 

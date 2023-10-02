@@ -48,7 +48,7 @@ export class DBInitializer {
         new Url({name: 'stores', path: '^/stores(/[0-9]+)?$', regexp: true}),
         // new Url({name: 'stores', path: '^/stores.*', regexp: true}),
         new Url({name: 'lives', path: '^/lives.*', regexp: true}),
-        // new Url({name: 'liveService-intent', path: `^${User.SCHEME}://.*`, regexp: true}),
+        new Url({name: 'liveService-intent', path: `^${User.SCHEME}://.*`, regexp: true}),
         // new Url({name: 'liveService-intent', path: `^${LiveServiceScheme}://.*`, regexp: true}),
       ];
       for (const it of urls) {
