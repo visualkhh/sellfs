@@ -1,4 +1,5 @@
 export const environment = {
+  name: 'sellfs',
   production: true,
   host: 'https://pet-spaces.com',
   apiHost: 'http://localhost:4500',

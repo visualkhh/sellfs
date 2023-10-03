@@ -3,6 +3,8 @@ import {Auth} from '@server/entitys/Auth';
 import schedule from 'node-schedule';
 import {AuthType} from '@src/codes/AuthType';
 import { Sim } from 'simple-boot-core/decorators/SimDecorator';
+import { environment } from '@server/environments/environment';
+
 /*
 https://www.npmjs.com/package/node-schedule
 *    *    *    *    *    *
@@ -23,7 +25,8 @@ const job = schedule.scheduleJob('42 * * * *', function(){
 //   WOW = 'WOW'
 // }
 @Sim({
-    autoStart: true
+    autoCreate: true,
+    container: environment.name
 })
 export class CacheScheduleManager {
     auths: Auth[] = [];

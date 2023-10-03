@@ -1,7 +1,8 @@
 import { Sim } from 'simple-boot-core/decorators/SimDecorator';
-
+import { environment } from '@server/environments/environment';
 @Sim({
-  autoStart: true
+  autoCreate: true,
+  container: environment.name+'-server'
 })
 export class TestScheduler {
 

@@ -63,7 +63,6 @@ npm run serve:server:watch --workspace=sellfs
 # project develop start
 ```shell
 npm run app:bundle:watch
-npm run app:bundle:watch
 npm run serve:watch
 ```
 

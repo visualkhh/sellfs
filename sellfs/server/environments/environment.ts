@@ -1,7 +1,7 @@
 import {Listen} from 'simple-boot-http-server/option/HttpServerOption';
 
 export const environment = {
-  name: 'pet-space',
+  name: 'sellfs',
   production: false,
   host: 'http://localhost:8081',
   wsHost: 'ws://localhost:8082/ws',

@@ -17,9 +17,11 @@ import { RequestLogEndPoint } from '@server/endpoints/RequestLogEndPoint';
 import { CloseLogEndPoint } from '@server/endpoints/CloseLogEndPoint';
 import { ErrorLogEndPoint } from '@server/endpoints/ErrorLogEndPoint';
 import { NotFoundError } from 'simple-boot-http-server/errors/NotFoundError';
-import { CacheScheduleManager } from '@server/schedules/CacheScheduleManager';
+import { environment } from '@server/environments/environment';
 import { TestScheduler } from '@server/schedules/TestScheduler';
+import { containers } from 'simple-boot-core/decorators/SimDecorator';
 
+const frontDistPath = environment.frontDistPath;
 
 Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
   const otherInstanceSim = new Map<ConstructorType<any>, any>();
@@ -28,7 +30,7 @@ Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
   return otherInstanceSim;
 }).then((otherInstanceSim) => {
   const option = new HttpServerOption();
-  const frontDistPath = 'dist-front';
+  option.container = environment.name;
   option.globalAdvice = new GlobalAdvice();
   option.requestEndPoints = [new RequestLogEndPoint()];
   option.closeEndPoints = [new CloseLogEndPoint()];
@@ -42,7 +44,7 @@ Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
     IntentSchemeFilter,
     new SSRFilter({
       frontDistPath: frontDistPath,
-      factorySimFrontOption: (window: any) => MakeSimFrontOption(window, {excludeSim: [CacheScheduleManager, TestScheduler]}),
+      factorySimFrontOption: (window: any) => MakeSimFrontOption(window, {}),
       factory: Factory,
       poolOption: {
         max: 10,
