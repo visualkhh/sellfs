@@ -3,7 +3,6 @@ import { UnauthorizedError } from 'simple-boot-http-server/errors/UnauthorizedEr
 import { AuthType } from 'codes/AuthType';
 import { Account } from '@server/entitys/Account';
 import { Sim } from 'simple-boot-core/decorators/SimDecorator';
-import { cacheScheduleManager } from '@server/schedules/CacheScheduleManager';
 import { RequestResponse } from 'simple-boot-http-server/models/RequestResponse';
 import { SimpleBootHttpServer } from 'simple-boot-http-server';
 import { DataSource } from 'typeorm';
@@ -12,13 +11,14 @@ import { HttpHeaders as SSRHttpHeaders } from 'simple-boot-http-ssr/codes/HttpHe
 import { TokenUtils } from '@server/utils/TokenUtils';
 import { Mimes } from 'simple-boot-http-server/codes/Mimes';
 import { Mimes as SSRMimes } from 'simple-boot-http-ssr/codes/Mimes';
+import { CacheScheduleManager } from '@server/schedules/CacheScheduleManager';
 
 export const securityFilterAccountSessionKey = 'securityFilter-account';
 
 @Sim
 export class SecurityFilter implements Filter {
 
-  constructor(private dataSource: DataSource) {
+  constructor(private dataSource: DataSource, private cacheScheduleManager: CacheScheduleManager) {
   }
 
 
@@ -93,7 +93,7 @@ export class SecurityFilter implements Filter {
   }
 
   private roles(url: string, authType: AuthType, rr: RequestResponse) {
-    top:for (const auth of cacheScheduleManager.auths) {
+    top:for (const auth of this.cacheScheduleManager.auths) {
       for (const authUrl of auth.authUrl ?? []) {
         if (authUrl.url! && authUrl.url.path && authUrl.url?.regexp) {
           const regexp = new RegExp(authUrl.url.path);

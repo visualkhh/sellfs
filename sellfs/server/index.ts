@@ -11,19 +11,20 @@ import { DataSource, EntityManager } from 'typeorm';
 import { IntentSchemeFilter } from 'simple-boot-http-ssr/filters/IntentSchemeFilter';
 import { IndexRouter } from '@server/routers/IndexRouter';
 import { RequestResponse } from 'simple-boot-http-server/models/RequestResponse';
-import { cacheScheduleManager } from '@server/schedules/CacheScheduleManager';
 import { SecurityFilter } from '@server/filters/SecurityFilter';
 import { GlobalAdvice } from '@server/advices/GlobalAdvice';
 import { RequestLogEndPoint } from '@server/endpoints/RequestLogEndPoint';
 import { CloseLogEndPoint } from '@server/endpoints/CloseLogEndPoint';
 import { ErrorLogEndPoint } from '@server/endpoints/ErrorLogEndPoint';
 import { NotFoundError } from 'simple-boot-http-server/errors/NotFoundError';
+import { CacheScheduleManager } from '@server/schedules/CacheScheduleManager';
+import { TestScheduler } from '@server/schedules/TestScheduler';
 
 
 Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
-  cacheScheduleManager.run(connection);
   const otherInstanceSim = new Map<ConstructorType<any>, any>();
   otherInstanceSim.set(DataSource, connection);
+  otherInstanceSim.set(TestScheduler, undefined);
   return otherInstanceSim;
 }).then((otherInstanceSim) => {
   const option = new HttpServerOption();
@@ -41,7 +42,7 @@ Promise.all([new DBInitializer().run()]).then(async ([connection]) => {
     IntentSchemeFilter,
     new SSRFilter({
       frontDistPath: frontDistPath,
-      factorySimFrontOption: (window: any) => MakeSimFrontOption(window),
+      factorySimFrontOption: (window: any) => MakeSimFrontOption(window, {excludeSim: [CacheScheduleManager, TestScheduler]}),
       factory: Factory,
       poolOption: {
         max: 10,

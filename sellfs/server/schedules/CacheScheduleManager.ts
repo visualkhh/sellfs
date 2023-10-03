@@ -2,6 +2,7 @@ import { Connection, DataSource } from 'typeorm';
 import {Auth} from '@server/entitys/Auth';
 import schedule from 'node-schedule';
 import {AuthType} from '@src/codes/AuthType';
+import { Sim } from 'simple-boot-core/decorators/SimDecorator';
 /*
 https://www.npmjs.com/package/node-schedule
 *    *    *    *    *    *
@@ -21,13 +22,15 @@ const job = schedule.scheduleJob('42 * * * *', function(){
 // export enum ScheduleType {
 //   WOW = 'WOW'
 // }
-// @Sim()
+@Sim({
+    autoStart: true
+})
 export class CacheScheduleManager {
     auths: Auth[] = [];
-    private dataSource?: DataSource;
 
-    constructor() {
-        console.log('ScheduleBoot  constructor')
+    constructor(private dataSource: DataSource) {
+        console.log('CacheScheduleManager constructor')
+        this.run(dataSource);
     }
 
     async run(dataSource: DataSource) {
@@ -52,5 +55,5 @@ export class CacheScheduleManager {
     }
 }
 
-export const cacheScheduleManager = new CacheScheduleManager();
+// export const cacheScheduleManager = new CacheScheduleManager();
 // export default cacheManager;

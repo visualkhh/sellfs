@@ -3,9 +3,10 @@ import { SimFrontOption, UrlType } from 'simple-boot-front/option/SimFrontOption
 import { AppRouter } from '@src/routers/AppRouter';
 import { ConstructorType } from 'simple-boot-core/types/Types';
 import { SimpleBootHttpSSRFactory } from 'simple-boot-http-ssr/SimpleBootHttpSSRFactory';
+import { InitOptionType } from 'simple-boot-core/SimOption';
 
-export const MakeSimFrontOption = (window: any): SimFrontOption => {
-  return new SimFrontOption(window).setUrlType(UrlType.path);
+export const MakeSimFrontOption = (window: any, initSimOption?: InitOptionType): SimFrontOption => {
+  return new SimFrontOption(window, initSimOption).setUrlType(UrlType.path);
 }
 
 class Factory extends SimpleBootHttpSSRFactory {
