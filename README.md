@@ -71,4 +71,5 @@ npm run serve:watch
 ```sql
 CREATE DATABASE sellfs CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER DATABASE sellfs CHARACTER SET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
 ```
